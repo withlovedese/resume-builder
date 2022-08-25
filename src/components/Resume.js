@@ -14,6 +14,18 @@ const Resume = () => {
         phoneNumber: '+234 916 545 0375',
         address: '1 Deji Odunuga Street, Anthony, Lagos, Nigeria',
         personalWebsite: 'withlovedese.github.io',
+        universityName: 'Duke University',
+        uniStartMonth: 'Aug',
+        uniStartYear: '2018',
+        uniEndMonth: 'Dec',
+        uniEndYear: '2023',
+        relCoursework: 'Please separate courses with commas',
+        highschoolName: 'Lousville Girls High School',
+        highStartMonth: 'Sep',
+        highStartYear: '2012',
+        highEndMonth: 'Jun',
+        highEndYear: '2018',
+        relAwards: 'Please separate awards with commas'
     })
 
     const { step } = state
@@ -76,7 +88,7 @@ const Resume = () => {
     };
 
   return (
-    <div className='mt-28'>
+    <div className='my-28'>
         {displayPage(step)}
     </div>
   )
