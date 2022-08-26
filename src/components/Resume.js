@@ -5,6 +5,7 @@ import Education from './Education'
 import Projects from './Projects'
 import Work from './Work'
 import Extracurriculars from './Extracurriculars'
+import SkillsInterests from './SkillsInterests'
 
 
 const Resume = () => {
@@ -73,6 +74,13 @@ const Resume = () => {
                             nextStep={nextStep}
                             prevStep={prevStep}
                         ></Extracurriculars>
+            case 5:
+                return <SkillsInterests
+                            state={state}
+                            handleChange={handleChange}
+                            nextStep={nextStep}
+                            prevStep={prevStep}
+                        ></SkillsInterests>
             default:
                 break;
         }
