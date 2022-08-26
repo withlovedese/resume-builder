@@ -65,6 +65,13 @@ const Resume = () => {
                             nextStep={nextStep}
                             prevStep={prevStep}
                         ></Work>
+            case 4:
+                return <Work
+                            state={state}
+                            handleChange={handleChange}
+                            nextStep={nextStep}
+                            prevStep={prevStep}
+                        ></Work>
             default:
                 break;
         }

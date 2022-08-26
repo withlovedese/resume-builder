@@ -11,7 +11,7 @@ const Profile = ({ state, handleChange, nextStep }) => {
             </div>
 
             {/* body */}
-            <div class="grid gap-6 mb-6 md:grid-cols-2 mx-5 my-6 text-left">
+            <div className="grid gap-6 mb-6 md:grid-cols-2 mx-5 my-6 text-left">
 
                 <div>
                   <label htmlFor="firstName" className='block mb-2 text-sm font-medium text-gray-900'>First Name</label>

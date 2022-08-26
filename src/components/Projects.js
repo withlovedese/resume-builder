@@ -11,7 +11,7 @@ const Projects = ({ state, handleChange, nextStep, prevStep }) => {
             </div>
 
             {/* body */}
-            <div class="grid gap-6 mb-6 md:grid-rows-2 mx-5 my-6 text-left">
+            <div className="grid gap-6 mb-6 md:grid-rows-2 mx-5 my-6 text-left">
 
               <div className='grid gap-3 mb-4 md:grid-rows-3 border-b border-b-purple-600'>
                   <div className='grid gap-3 mb-4 md:grid-cols-2'>
