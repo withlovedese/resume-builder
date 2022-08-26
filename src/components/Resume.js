@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import Profile from './Profile'
 import Education from './Education'
+import Projects from './Projects'
+import Work from './Work'
 
 
 const Resume = () => {
@@ -49,12 +51,20 @@ const Resume = () => {
                             prevStep={prevStep}
                         ></Education>
             case 2:
-                //return <Projects></Projects>
-                break;
+                return <Projects
+                            state={state}
+                            handleChange={handleChange}
+                            nextStep={nextStep}
+                            prevStep={prevStep}
+                        ></Projects>
+
             case 3:
-                //return <Work></Work>
-                break;
-        
+                return <Work
+                            state={state}
+                            handleChange={handleChange}
+                            nextStep={nextStep}
+                            prevStep={prevStep}
+                        ></Work>
             default:
                 break;
         }
