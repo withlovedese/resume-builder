@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdOutlineDownloading } from 'react-icons/md'
 
-const Confirm = ({ state, prevStep, submit}) => {
+const Confirm = ({ prevStep, createAndDownloadPdf}) => {
   return (
     <div className="container flex justify-center mx-auto">
         <div className="block rounded-lg shadow-lg bg-purple-100 text-center w-9/12">
@@ -22,7 +22,7 @@ const Confirm = ({ state, prevStep, submit}) => {
                 
                 <button className="bg-purple-400 rounded-md text-white px-5 py-2.5 mr-3" onClick={prevStep}>Previous</button>
 
-                <button className="bg-purple-400 rounded-md text-white px-5 py-2.5 flex justify-center align-middle" onClick={submit}>
+                <button className="bg-purple-400 rounded-md text-white px-5 py-2.5 flex justify-center align-middle" onClick={createAndDownloadPdf}>
                     <p className='mr-2'>Download PDF</p>
                      <MdOutlineDownloading className='text-2xl'></MdOutlineDownloading> 
                 </button>
