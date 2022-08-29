@@ -7,6 +7,8 @@ import Work from './Work'
 import Extracurriculars from './Extracurriculars'
 import SkillsInterests from './SkillsInterests'
 import Confirm from './Confirm'
+import axios from 'axios'
+import { saveAs } from 'file-saver'
 
 
 const Resume = () => {
@@ -30,7 +32,66 @@ const Resume = () => {
         highStartYear: '2012',
         highEndMonth: 'Jun',
         highEndYear: '2018',
-        relAwards: 'Please separate awards with commas'
+        relAwards: 'Please separate awards with commas',
+        projectName1: '', 
+        techUsed1: '', 
+        projStartMonth1: '', 
+        projStartYear1: '', 
+        projEndMonth1: '', 
+        projEndYear1: '', 
+        projDescription1: '',
+        projectName2: '', 
+        techUsed2: '', 
+        projStartMonth2: '', 
+        projStartYear2: '', 
+        projEndMonth2: '', 
+        projEndYear2: '', 
+        projDescription2: '',
+        projectName3: '', 
+        techUsed3: '', 
+        projStartMonth3: '', 
+        projStartYear3: '', 
+        projEndMonth3: '', 
+        projEndYear3: '', 
+        projDescription3: '',
+        projectName4: '', 
+        techUsed4: '', 
+        projStartMonth4: '', 
+        projStartYear4: '', 
+        projEndMonth4: '', 
+        projEndYear4: '', 
+        projDescription4: '',
+        position1: '', 
+        institutionName1: '', 
+        posStartMonth1: '', 
+        posStartYear1: '', 
+        posEndMonth1: '', 
+        posEndYear1: '', 
+        posDescription1: '',
+        position2: '', 
+        institutionName2: '', 
+        posStartMonth2: '', 
+        posStartYear2: '', 
+        posEndMonth2: '', 
+        posEndYear2: '', 
+        posDescription2: '',
+        activity1: '', 
+        actInstitutionName1: '', 
+        actStartMonth1: '', 
+        actStartYear1: '', 
+        actEndMonth1: '', 
+        actEndYear1: '', 
+        actDescription1: '',
+        activity2: '', 
+        actInstitutionName2: '', 
+        actStartMonth2: '', 
+        actStartYear2: '', 
+        actEndMonth2: '', 
+        actEndYear2: '', 
+        actDescription2: '',
+        skills: '', 
+        languages: '', 
+        interests: ''
     })
 
     const { step } = state
@@ -96,6 +157,11 @@ const Resume = () => {
     //submit form
     const submit = () =>{
 
+    }
+
+    //create and download pdf
+    const createAndDownloadPdf = () =>{
+        axios.post('create/pdf', state)
     }
 
     //proceed to next step
