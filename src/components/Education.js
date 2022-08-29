@@ -13,10 +13,28 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
             {/* body */}
             <div className="grid gap-6 mb-6 md:grid-rows-2 mx-5 my-6 text-left">
 
-                <div className='grid gap-3 mb-4 md:grid-rows-3 border-b border-b-purple-600'>
+                <div className='grid gap-3 mb-4 md:grid-rows-4 border-b border-b-purple-600'>
                   <div>
                     <label htmlFor="universityName" className='block mb-2 text-sm font-medium text-gray-900'>University Name</label>
                     <input type="text" name='universityName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.universityName}/>
+                  </div>
+
+                  <div className='grid gap-3 mb-4 md:grid-cols-3'>
+
+                    <div>
+                      <label htmlFor="major" className='block mb-2 text-sm font-medium text-gray-900'>Major</label>
+                      <input type="text" name='major' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} value={state.major}/>
+                    </div>
+                    <div>
+                      <label htmlFor="minor" className='block mb-2 text-sm font-medium text-gray-900'>Minor</label>
+                      <input type="text" name='minor' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.minor}/>
+                    </div>
+
+                    <div>
+                      <label htmlFor="uniGPA" className='block mb-2 text-sm font-medium text-gray-900'>C.G.P.A.</label>
+                      <input type="text" name='uniGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.uniGPA}/>
+                    </div>
+                    
                   </div>
                   <div className='grid gap-3 mb-4 md:grid-cols-4'>
 
@@ -44,10 +62,20 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
                   </div>
                 </div>
 
-                <div className='grid gap-3 mb-4 md:grid-rows-3'>
-                  <div>
-                    <label htmlFor="highschoolName" className='block mb-2 text-sm font-medium text-gray-900'>Highschool Name</label>
-                    <input type="text" name='highschoolName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highschoolName}/>
+                <div className='grid gap-2 mb-3 md:grid-rows-4'>
+                  <div className='grid gap-3 mb-4 md:grid-cols-2'>
+
+                    <div>
+                      <label htmlFor="highschoolName" className='block mb-2 text-sm font-medium text-gray-900'>Highschool Name</label>
+                      <input type="text" name='highschoolName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full block p-2.5' onChange={handleChange} value={state.highschoolName}/>
+                    </div>
+
+                    <div>
+                      <label htmlFor="highGPA" className='block mb-2 text-sm font-medium text-gray-900'>C.G.P.A.</label>
+                      <input type="text" name='highGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highGPA}/>
+                    </div>
+                    
+                    
                   </div>
                   <div className='grid gap-3 mb-4 md:grid-cols-4'>
 
@@ -70,12 +98,16 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
                   </div>
 
                   <div>
+                    <label htmlFor="SAT" className='block mb-2 text-sm font-medium text-gray-900'>SAT Score</label>
+                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={`****/1600 (EBRW:***, Math:***)`} name="SAT"/>
+                  </div>
+                  
+
+                  <div>
                     <label htmlFor="relAwards" className='block mb-2 text-sm font-medium text-gray-900'>Relevant Awards</label>
-                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={`${state.relAwards}`} name="relAwards"/>
+                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={`Please separate awards with commas`} name="relAwards"/>
                   </div>
                 </div>
-
-                
             </div>
 
             {/* footer */}
