@@ -6,6 +6,7 @@ import Projects from './Projects'
 import Work from './Work'
 import Extracurriculars from './Extracurriculars'
 import SkillsInterests from './SkillsInterests'
+import Confirm from './Confirm'
 
 
 const Resume = () => {
@@ -81,9 +82,20 @@ const Resume = () => {
                             nextStep={nextStep}
                             prevStep={prevStep}
                         ></SkillsInterests>
+            case 6:
+                return <Confirm
+                            state={state}
+                            prevStep={prevStep}
+                            submit={submit}
+                        ></Confirm>
             default:
                 break;
         }
+    }
+
+    //submit form
+    const submit = () =>{
+
     }
 
     //proceed to next step
