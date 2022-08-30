@@ -18,13 +18,13 @@ const Work = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="position1" className='block mb-2 text-sm font-medium text-gray-900'>Job Position</label>
-                      <input type="text" name='position1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.position1}/>
+                      <input type="text" name='position1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.position1}/>
 
                     </div>
                     
                     <div>
                       <label htmlFor="institutionName1" className='block mb-2 text-sm font-medium text-gray-900'>Institution / Company</label>
-                      <input type="text" name='institutionName1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.institutionName1}/>
+                      <input type="text" name='institutionName1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.institutionName1}/>
                     </div>
 
                     
@@ -33,25 +33,25 @@ const Work = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="posStartMonth1" className='block mb-2 text-sm font-medium text-gray-900'>Start Month</label>
-                      <input type="text" name='posStartMonth1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} value={state.posStartMonth1}/>
+                      <input type="text" name='posStartMonth1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} placeholder={state.posStartMonth1}/>
                     </div>
                     <div>
                       <label htmlFor="posStartYear1" className='block mb-2 text-sm font-medium text-gray-900'>Start Year</label>
-                      <input type="text" name='posStartYear1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posStartYear1}/>
+                      <input type="text" name='posStartYear1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posStartYear1}/>
                     </div>
                     <div>
                       <label htmlFor="posEndMonth1" className='block mb-2 text-sm font-medium text-gray-900'>End Month</label>
-                      <input type="text" name='posEndMonth1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posEndMonth1}/>
+                      <input type="text" name='posEndMonth1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posEndMonth1}/>
                     </div>
                     <div>
                       <label htmlFor="posEndYear1" className='block mb-2 text-sm font-medium text-gray-900'>End Year</label>
-                      <input type="text" name='posEndYear1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posEndYear1}/>
+                      <input type="text" name='posEndYear1' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posEndYear1}/>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="posDescription1" className='block mb-2 text-sm font-medium text-gray-900'>Work Description</label>
-                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} name="posDescription1"/>
+                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} name="posDescription1" placeholder={state.posDescription1}/>
                   </div>
               </div>
 
@@ -60,13 +60,13 @@ const Work = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="position2" className='block mb-2 text-sm font-medium text-gray-900'>Job Position</label>
-                      <input type="text" name='position2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.position2}/>
+                      <input type="text" name='position2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.position2}/>
 
                     </div>
                     
                     <div>
                       <label htmlFor="institutionName2" className='block mb-2 text-sm font-medium text-gray-900'>Institution / Company</label>
-                      <input type="text" name='institutionName2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.institutionName2}/>
+                      <input type="text" name='institutionName2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.institutionName2}/>
                     </div>
 
                     
@@ -75,25 +75,25 @@ const Work = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="posStartMonth2" className='block mb-2 text-sm font-medium text-gray-900'>Start Month</label>
-                      <input type="text" name='posStartMonth2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} value={state.posStartMonth2}/>
+                      <input type="text" name='posStartMonth2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} placeholder={state.posStartMonth2}/>
                     </div>
                     <div>
                       <label htmlFor="posStartYear2" className='block mb-2 text-sm font-medium text-gray-900'>Start Year</label>
-                      <input type="text" name='posStartYear2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posStartYear2}/>
+                      <input type="text" name='posStartYear2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posStartYear2}/>
                     </div>
                     <div>
                       <label htmlFor="posEndMonth2" className='block mb-2 text-sm font-medium text-gray-900'>End Month</label>
-                      <input type="text" name='posEndMonth2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posEndMonth2}/>
+                      <input type="text" name='posEndMonth2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posEndMonth2}/>
                     </div>
                     <div>
                       <label htmlFor="posEndYear2" className='block mb-2 text-sm font-medium text-gray-900'>End Year</label>
-                      <input type="text" name='posEndYear2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.posEndYear2}/>
+                      <input type="text" name='posEndYear2' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.posEndYear2}/>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="posDescription2" className='block mb-2 text-sm font-medium text-gray-900'>Work Description</label>
-                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} name="posDescription2"/>
+                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} name="posDescription2" placeholder={state.posDescription2}/>
                   </div>
               </div>     
 

@@ -15,32 +15,32 @@ const Profile = ({ state, handleChange, nextStep }) => {
 
                 <div>
                   <label htmlFor="firstName" className='block mb-2 text-sm font-medium text-gray-900'>First Name</label>
-                  <input type="text" name='firstName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.firstName}/>
+                  <input type="text" name='firstName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.firstName}/>
                 </div>
 
                 <div>
                   <label htmlFor="lastName" className='block mb-2 text-sm font-medium text-gray-900'>Last Name</label>
-                  <input type="text" name='lastName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.lastName}/>
+                  <input type="text" name='lastName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.lastName}/>
                 </div>
 
                 <div>
                   <label htmlFor="address" className='block mb-2 text-sm font-medium text-gray-900'>Address</label>
-                  <input type="text" name='address' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.address}/>
+                  <input type="text" name='address' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.address}/>
                 </div>
 
                 <div>
                   <label htmlFor="phoneNumber" className='block mb-2 text-sm font-medium text-gray-900'>Phone Number</label>
-                  <input type="text" name='phoneNumber' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.phoneNumber}/>
+                  <input type="text" name='phoneNumber' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.phoneNumber}/>
                 </div>
 
                 <div>
                   <label htmlFor="email" className='block mb-2 text-sm font-medium text-gray-900'>Email</label>
-                  <input type="text" name='email' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.email}/>
+                  <input type="text" name='email' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.email}/>
                 </div>
 
                 <div>
                   <label htmlFor="website" className='block mb-2 text-sm font-medium text-gray-900'>Personal Website</label>
-                  <input type="text" name='personalWebsite' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.personalWebsite}/>
+                  <input type="text" name='personalWebsite' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.personalWebsite}/>
                 </div>
               
             </div>

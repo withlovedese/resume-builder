@@ -16,23 +16,23 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
                 <div className='grid gap-3 mb-4 md:grid-rows-4 border-b border-b-purple-600'>
                   <div>
                     <label htmlFor="universityName" className='block mb-2 text-sm font-medium text-gray-900'>University Name</label>
-                    <input type="text" name='universityName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.universityName}/>
+                    <input type="text" name='universityName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.universityName}/>
                   </div>
 
                   <div className='grid gap-3 mb-4 md:grid-cols-3'>
 
                     <div>
                       <label htmlFor="major" className='block mb-2 text-sm font-medium text-gray-900'>Major</label>
-                      <input type="text" name='major' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} value={state.major}/>
+                      <input type="text" name='major' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} placeholder={state.major}/>
                     </div>
                     <div>
                       <label htmlFor="minor" className='block mb-2 text-sm font-medium text-gray-900'>Minor</label>
-                      <input type="text" name='minor' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.minor}/>
+                      <input type="text" name='minor' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.minor}/>
                     </div>
 
                     <div>
                       <label htmlFor="uniGPA" className='block mb-2 text-sm font-medium text-gray-900'>C.G.P.A.</label>
-                      <input type="text" name='uniGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.uniGPA}/>
+                      <input type="text" name='uniGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.uniGPA}/>
                     </div>
                     
                   </div>
@@ -40,19 +40,19 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="uniStartMonth" className='block mb-2 text-sm font-medium text-gray-900'>Start Month</label>
-                      <input type="text" name='uniStartMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} value={state.uniStartMonth}/>
+                      <input type="text" name='uniStartMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5'onChange={handleChange} placeholder={state.uniStartMonth}/>
                     </div>
                     <div>
                       <label htmlFor="uniStartYear" className='block mb-2 text-sm font-medium text-gray-900'>Start Year</label>
-                      <input type="text" name='uniStartYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.uniStartYear}/>
+                      <input type="text" name='uniStartYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.uniStartYear}/>
                     </div>
                     <div>
                       <label htmlFor="uniEndMonth" className='block mb-2 text-sm font-medium text-gray-900'>End Month</label>
-                      <input type="text" name='uniEndMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.uniEndMonth}/>
+                      <input type="text" name='uniEndMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.uniEndMonth}/>
                     </div>
                     <div>
                       <label htmlFor="uniEndYear" className='block mb-2 text-sm font-medium text-gray-900'>End Year</label>
-                      <input type="text" name='uniEndYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.uniEndYear}/>
+                      <input type="text" name='uniEndYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.uniEndYear}/>
                     </div>
                   </div>
 
@@ -67,12 +67,12 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="highschoolName" className='block mb-2 text-sm font-medium text-gray-900'>Highschool Name</label>
-                      <input type="text" name='highschoolName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full block p-2.5' onChange={handleChange} value={state.highschoolName}/>
+                      <input type="text" name='highschoolName' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 w-full block p-2.5' onChange={handleChange} placeholder={state.highschoolName}/>
                     </div>
 
                     <div>
                       <label htmlFor="highGPA" className='block mb-2 text-sm font-medium text-gray-900'>C.G.P.A.</label>
-                      <input type="text" name='highGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highGPA}/>
+                      <input type="text" name='highGPA' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.highGPA}/>
                     </div>
                     
                     
@@ -81,19 +81,19 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
 
                     <div>
                       <label htmlFor="highStartMonth" className='block mb-2 text-sm font-medium text-gray-900'>Start Month</label>
-                      <input type="text" name='highStartMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highStartMonth}/>
+                      <input type="text" name='highStartMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.highStartMonth}/>
                     </div>
                     <div>
                       <label htmlFor="highStartYear" className='block mb-2 text-sm font-medium text-gray-900'>Start Year</label>
-                      <input type="text" name='highStartYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highStartYear}/>
+                      <input type="text" name='highStartYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.highStartYear}/>
                     </div>
                     <div>
                       <label htmlFor="highEndMonth" className='block mb-2 text-sm font-medium text-gray-900'>End Month</label>
-                      <input type="text" name='highEndMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highEndMonth}/>
+                      <input type="text" name='highEndMonth' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.highEndMonth}/>
                     </div>
                     <div>
                       <label htmlFor="highEndYear" className='block mb-2 text-sm font-medium text-gray-900'>End Year</label>
-                      <input type="text" name='highEndYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} value={state.highEndYear}/>
+                      <input type="text" name='highEndYear' className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.highEndYear}/>
                     </div>
                   </div>
 
@@ -105,7 +105,7 @@ const Education = ({ state, handleChange, nextStep, prevStep }) => {
 
                   <div>
                     <label htmlFor="relAwards" className='block mb-2 text-sm font-medium text-gray-900'>Relevant Awards</label>
-                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={`Please separate awards with commas`} name="relAwards"/>
+                    <input type="text" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5' onChange={handleChange} placeholder={state.relAwards} name="relAwards"/>
                   </div>
                 </div>
             </div>

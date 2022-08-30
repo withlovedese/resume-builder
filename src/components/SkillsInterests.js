@@ -14,17 +14,17 @@ const SkillsInterests = ({ state, handleChange, nextStep, prevStep }) => {
             <div className="grid gap-6 mb-6 md:grid-rows-3 mx-5 my-6 text-left">
                 <div>
                   <label htmlFor="skills" className='block mb-2 text-sm font-medium text-gray-900'>Skills</label>
-                  <textarea type="text" name='skills' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} value={state.skills}/>
+                  <textarea type="text" name='skills' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} placeholder={state.skills}/>
                 </div>
 
                 <div>
                   <label htmlFor="languages" className='block mb-2 text-sm font-medium text-gray-900'>Languages</label>
-                  <textarea type="text" name='languages' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} value={state.languages}/>
+                  <textarea type="text" name='languages' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} placeholder={state.languages}/>
                 </div>
 
                 <div>
                   <label htmlFor="interests" className='block mb-2 text-sm font-medium text-gray-900'>Interests</label>
-                  <textarea type="text" name='interests' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} value={state.interests}/>
+                  <textarea type="text" name='interests' id="large-input" className='bg-purple-200 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 h-16' onChange={handleChange} placeholder={state.interests}/>
                 </div>
 
               
