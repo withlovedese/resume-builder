@@ -183,8 +183,8 @@ const Resume = () => {
     //create and download pdf
     const createAndDownloadPdf = () =>{
         alert("Please wait a second while your pdf downloads!")
-        axios.post('/create-pdf', values)
-        .then(() => axios.get('/fetch-pdf', { responseType: 'blob'}))
+        axios.post('https://withlovedese-resume-builder.herokuapp.com/create-pdf', values)
+        .then(() => axios.get('https://withlovedese-resume-builder.herokuapp.com/fetch-pdf', { responseType: 'blob'}))
         .then((res) => {
             const pdfBlob = new Blob( [res.data], { type: 'application/pdf'})
 
